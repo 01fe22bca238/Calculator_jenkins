@@ -1,5 +1,5 @@
 
-class Calculator  {
+class Calculator extends Extended_Calculator {
 
     float addition(float a, float b) {
         return (a + b);
@@ -23,7 +23,7 @@ class Calculator  {
         float a = 10;
 
         float b = 20;
-
+        float n = 10;
         float add = calc.addition(a, b);
         System.out.println("Addition of two Numbers:" + add);
 
@@ -35,6 +35,12 @@ class Calculator  {
 
         float div = calc.division(a, b);
         System.out.println("Division:" + div);
+
+        float square = calc.square(n);
+        System.out.println("Square:" + square);
+
+        float cube = calc.cube(n);
+        System.out.println("Cube:" + cube);
 
     }
 }
